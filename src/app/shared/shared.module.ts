@@ -9,10 +9,11 @@ import { BreadcrumsComponent } from './breadcrums/breadcrums.component';
 import { HeaderComponent } from './header/header.component';
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { GraficosComponent } from './components/graficos/graficos.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  imports: [CommonModule, FormsModule, ChartsModule],
+  imports: [CommonModule, FormsModule, ChartsModule, RouterModule],
   declarations: [
     NoPageFoundComponent,
     SidebarComponent,
