@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { PAGES_ROUTES } from './pages.routes';
 
 // MODULES
+import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import {FormsModule} from '@angular/forms';
 
-
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -16,12 +18,15 @@ import { PagesComponent } from './pages.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
     imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
+        PipesModule
     ],
     declarations: [
         PagesComponent,
@@ -31,6 +36,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
+        ProfileComponent,
     ],
     exports: [
         PagesComponent,

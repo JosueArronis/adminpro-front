@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumsComponent } from './breadcrums/breadcrums.component';
@@ -13,7 +16,7 @@ import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  imports: [CommonModule, FormsModule, ChartsModule, RouterModule],
+  imports: [CommonModule, FormsModule, ChartsModule, RouterModule, PipesModule],
   declarations: [
     NoPageFoundComponent,
     SidebarComponent,
