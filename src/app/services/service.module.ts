@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalUploadService } from '../shared/components/modal-upload/modal-upload.service';
 // Servicios
 import {
   SettingsService,
@@ -21,7 +22,8 @@ import {
     SharedService,
     UsuarioService,
     LoginGuardGuard,
-    UploadFilesService
+    UploadFilesService,
+    ModalUploadService
   ]
 })
 export class ServiceModule {}

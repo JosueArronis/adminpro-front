@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { GraficosComponent } from './components/graficos/graficos.component';
 import { RouterModule } from '@angular/router';
+import { ModalUploadComponent } from './components/modal-upload/modal-upload.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { RouterModule } from '@angular/router';
     BreadcrumsComponent,
     HeaderComponent,
     IncrementadorComponent,
-    GraficosComponent
+    GraficosComponent,
+    ModalUploadComponent
   ],
   exports: [
     NoPageFoundComponent,
@@ -31,7 +33,8 @@ import { RouterModule } from '@angular/router';
     BreadcrumsComponent,
     HeaderComponent,
     IncrementadorComponent,
-    GraficosComponent
+    GraficosComponent,
+    ModalUploadComponent
   ]
 })
 export class SharedModule {}

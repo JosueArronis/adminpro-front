@@ -58,7 +58,6 @@ export class RegisterComponent implements OnInit {
       this.forma.value.password,
     );
     this._usuarioServices.crearUsuario(usuario).subscribe( (resp: any) => {
-      console.log(resp);
       this.router.navigate(['/login']);
     });
   }
