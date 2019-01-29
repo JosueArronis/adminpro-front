@@ -34,7 +34,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
         PipesModule
     ],
     declarations: [
-        PagesComponent,
+        // PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
@@ -49,7 +49,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
         BusquedaComponent
     ],
     exports: [
-        PagesComponent,
+        // PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,

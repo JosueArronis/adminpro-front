@@ -12,7 +12,8 @@ import {
   UploadFilesService,
   HospitalService,
   MedicoService,
-  AdminGuard
+  AdminGuard,
+  VerificaTokenGuard
  } from './service.index';
 
 
@@ -26,6 +27,7 @@ import {
     UsuarioService,
     LoginGuardGuard,
     AdminGuard,
+    VerificaTokenGuard,
     UploadFilesService,
     ModalUploadService,
     HospitalService,
